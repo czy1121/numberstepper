@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- NumberPicker -->
+    <declare-styleable name="NumberPicker">
+        <attr name="npButtonSize" format="dimension" />
+
+        <attr name="npStep" format="integer" />
+        <attr name="npValue" format="integer" />
+        <attr name="npMaxValue" format="integer" />
+        <attr name="npMinValue" format="integer" />
+
+
+        <attr name="npStyleLeft" format="reference"/>
+        <attr name="npStyleRight" format="reference" />
+        <attr name="npStyleValue" format="reference" />
+
+    </declare-styleable>
+
+    <style name="NumberPicker" parent="NumberPickerStyle">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:background">@drawable/number_picker_bg</item>
+    </style>
+
+    <style name="NumberPickerStyle">
+        <item name="android:theme">@style/NumberPickerTheme</item>
+    </style>
+    <style name="NumberPickerTheme">
+        <item name="npStyleLeft">@style/NumberPickerLeft</item>
+        <item name="npStyleRight">@style/NumberPickerRight</item>
+        <item name="npStyleValue">@style/NumberPickerValue</item>
+    </style>
+
+    <style name="NumberPickerLeft">
+        <item name="android:padding">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/number_picker_bg_left</item>
+        <item name="android:src">@drawable/number_picker_left</item>
+    </style>
+    <style name="NumberPickerRight" parent="NumberPickerLeft">
+        <item name="android:background">@drawable/number_picker_bg_right</item>
+        <item name="android:src">@drawable/number_picker_right</item>
+    </style>
+    <style name="NumberPickerValue">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:text">123456</item>
+    </style>
+</resources>
