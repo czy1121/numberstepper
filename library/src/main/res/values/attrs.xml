@@ -9,7 +9,6 @@
         <attr name="npMaxValue" format="integer" />
         <attr name="npMinValue" format="integer" />
 
-
         <attr name="npStyleLeft" format="reference"/>
         <attr name="npStyleRight" format="reference" />
         <attr name="npStyleValue" format="reference" />

@@ -2,12 +2,15 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.czy1121'
+version='1.0.0'
+archivesBaseName='numberpicker'
 
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
 
     defaultConfig {
+
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 1
@@ -23,6 +26,7 @@ android {
         }
     }
 }
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
