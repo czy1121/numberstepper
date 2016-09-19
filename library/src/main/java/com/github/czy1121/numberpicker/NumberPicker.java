@@ -1,4 +1,4 @@
-package ezy.widget.view;
+package com.github.czy1121.numberpicker;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -17,7 +17,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import ezy.widget.R;
 
 public class NumberPicker extends LinearLayout {
 
