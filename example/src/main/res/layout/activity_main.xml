@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.github.czy1121.numberpicker.example.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="value: "
+            android:textSize="16sp"/>
+        <com.github.czy1121.numberpicker.NumberPicker
+            android:id="@+id/np"
+            style="@style/NumberPicker"
+            android:layout_weight="1"
+            app:npMaxValue="100"
+            app:npMinValue="-20"
+            app:npStep="1"
+            app:npValue="-8"
+            />
+        <TextView
+            android:id="@+id/txt_value"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="step: "
+            android:textSize="16sp"/>
+        <com.github.czy1121.numberpicker.NumberPicker
+            android:id="@+id/np_step"
+            style="@style/NumberPicker"
+            app:npMaxValue="10"
+            app:npMinValue="1"
+            app:npStep="1"
+            app:npValue="5"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="quick: "
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/v_min"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#DDD"
+            android:gravity="center"
+            android:text="min"/>
+
+        <TextView
+            android:id="@+id/v10"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#DDD"
+            android:gravity="center"
+            android:text="10"/>
+
+        <TextView
+            android:id="@+id/v25"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#DDD"
+            android:gravity="center"
+            android:text="25"/>
+
+        <TextView
+            android:id="@+id/v50"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#DDD"
+            android:gravity="center"
+            android:text="50"/>
+
+        <TextView
+            android:id="@+id/v_max"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="#DDD"
+            android:gravity="center"
+            android:text="max"/>
+    </LinearLayout>
+
+</LinearLayout>

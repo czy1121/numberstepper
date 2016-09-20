@@ -1,3 +1,2 @@
-
-include ':library'
-rootProject.name='numberpicker'
+include ':library', ':example'
+rootProject.name = 'numberpicker'
