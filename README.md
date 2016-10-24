@@ -20,7 +20,7 @@ dependencies {
 **XML**
 
 ``` xml
-<com.github.czy1121.numberpicker.NumberPicker
+<com.github.czy1121.view.NumberPicker
     android:id="@+id/np"
     style="@style/NumberPicker"
     app:npMaxValue="100"

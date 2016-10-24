@@ -1,4 +1,4 @@
-package com.github.czy1121.numberpicker;
+package com.github.czy1121.view;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -17,28 +17,30 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.github.czy1121.numberstepper.R;
 
-public class NumberPicker extends LinearLayout {
+
+public class NumberStepper extends LinearLayout {
 
     private int mStep = 1, mValue = 0, mMaxValue = 0, mMinValue = 0;
     ImageView btnLeft, btnRight;
     EditText txtValue;
     OnValueChangedListener mOnValueChanged;
 
-    public NumberPicker(Context context) {
+    public NumberStepper(Context context) {
         this(context, null);
     }
 
-    public NumberPicker(Context context, AttributeSet attrs) {
+    public NumberStepper(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs);
     }
 
-    public NumberPicker(Context context, AttributeSet attrs, int defStyleAttr) {
+    public NumberStepper(Context context, AttributeSet attrs, int defStyleAttr) {
         this(context, attrs, defStyleAttr, 0);
     }
 
-    public NumberPicker(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public NumberStepper(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr);
         init(context, attrs);
     }
@@ -73,16 +75,16 @@ public class NumberPicker extends LinearLayout {
     }
 
     private void init(Context context, AttributeSet attrs) {
-        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.NumberPicker);
+        TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.NumberStepper);
 
         int buttonSize = dp2px(Resources.getSystem().getDisplayMetrics(), 35);
 
         try {
-            buttonSize = (int) a.getDimension(R.styleable.NumberPicker_npButtonSize, buttonSize);
-            mStep = a.getInt(R.styleable.NumberPicker_npStep, 1);
-            mValue = a.getInt(R.styleable.NumberPicker_npValue, 0);
-            mMinValue = a.getInt(R.styleable.NumberPicker_npMinValue, Integer.MIN_VALUE);
-            mMaxValue = a.getInt(R.styleable.NumberPicker_npMaxValue, Integer.MAX_VALUE);
+            buttonSize = (int) a.getDimension(R.styleable.NumberStepper_nsButtonSize, buttonSize);
+            mStep = a.getInt(R.styleable.NumberStepper_nsStep, 1);
+            mValue = a.getInt(R.styleable.NumberStepper_nsValue, 0);
+            mMinValue = a.getInt(R.styleable.NumberStepper_nsMinValue, Integer.MIN_VALUE);
+            mMaxValue = a.getInt(R.styleable.NumberStepper_nsMaxValue, Integer.MAX_VALUE);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -91,9 +93,9 @@ public class NumberPicker extends LinearLayout {
         setOrientation(HORIZONTAL);
         setFocusableInTouchMode(true);
 
-        btnLeft = new ImageView(context, null, R.attr.npStyleLeft);
-        btnRight = new ImageView(context, null, R.attr.npStyleRight);
-        txtValue = new EditText(context, null, R.attr.npStyleValue);
+        btnLeft = new ImageView(context, null, R.attr.nsStyleLeft);
+        btnRight = new ImageView(context, null, R.attr.nsStyleRight);
+        txtValue = new EditText(context, null, R.attr.nsStyleValue);
         txtValue.setFocusableInTouchMode(true);
         txtValue.setInputType(InputType.TYPE_CLASS_NUMBER);
         txtValue.setFilters(new InputFilter[]{new InputFilter.LengthFilter(6)});
@@ -244,7 +246,7 @@ public class NumberPicker extends LinearLayout {
     }
 
     public interface OnValueChangedListener {
-        void onValueChanged(NumberPicker view, int value);
+        void onValueChanged(NumberStepper view, int value);
     }
 }
 

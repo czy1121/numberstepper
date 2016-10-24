@@ -10,8 +10,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.github.czy1121.numberpicker.example.MainActivity">
+    android:paddingTop="@dimen/activity_vertical_margin">
 
 
     <LinearLayout
@@ -25,14 +24,14 @@
             android:layout_gravity="center"
             android:text="value: "
             android:textSize="16sp"/>
-        <com.github.czy1121.numberpicker.NumberPicker
+        <com.github.czy1121.view.NumberStepper
             android:id="@+id/np"
-            style="@style/NumberPicker"
+            style="@style/NumberStepper"
             android:layout_weight="1"
-            app:npMaxValue="100"
-            app:npMinValue="-20"
-            app:npStep="1"
-            app:npValue="-8"
+            app:nsMaxValue="100"
+            app:nsMinValue="-20"
+            app:nsStep="1"
+            app:nsValue="-8"
             />
         <TextView
             android:id="@+id/txt_value"
@@ -55,13 +54,13 @@
             android:layout_gravity="center"
             android:text="step: "
             android:textSize="16sp"/>
-        <com.github.czy1121.numberpicker.NumberPicker
+        <com.github.czy1121.view.NumberStepper
             android:id="@+id/np_step"
-            style="@style/NumberPicker"
-            app:npMaxValue="10"
-            app:npMinValue="1"
-            app:npStep="1"
-            app:npValue="5"
+            style="@style/NumberStepper"
+            app:nsMaxValue="10"
+            app:nsMinValue="1"
+            app:nsStep="1"
+            app:nsValue="5"
             />
     </LinearLayout>
 
