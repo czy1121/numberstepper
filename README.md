@@ -35,7 +35,7 @@ dependencies {
 **Java**
 
 ``` java
-nsValue = (NumberStepper) findViewById(R.id.np);
+nsValue = (NumberStepper) findViewById(R.id.ns);
 nsValue.setOnValueChangedListener(new NumberStepper.OnValueChangedListener() {
     @Override
     public void onValueChanged(NumberStepper view, int value) {
