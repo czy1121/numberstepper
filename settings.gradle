@@ -1,2 +1,2 @@
 include ':library', ':example'
-rootProject.name = 'numberpicker'
+rootProject.name = 'numberstepper'
