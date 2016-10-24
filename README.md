@@ -13,7 +13,7 @@ repositories {
     
 ``` groovy
 dependencies {
-    compile 'com.github.czy1121:numberstepper:1.0.3'
+    compile 'com.github.czy1121:numberstepper:1.1.0'
 }
 ```
     
