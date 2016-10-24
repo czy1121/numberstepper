@@ -25,7 +25,7 @@
             android:text="value: "
             android:textSize="16sp"/>
         <com.github.czy1121.view.NumberStepper
-            android:id="@+id/np"
+            android:id="@+id/ns"
             style="@style/NumberStepper"
             android:layout_weight="1"
             app:nsMaxValue="100"

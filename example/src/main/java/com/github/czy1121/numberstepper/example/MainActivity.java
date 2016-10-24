@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nsValue = (NumberStepper) findViewById(R.id.np);
+        nsValue = (NumberStepper) findViewById(R.id.ns);
         nsStep = (NumberStepper) findViewById(R.id.np_step);
 
         txtValue = (TextView) findViewById(R.id.txt_value);

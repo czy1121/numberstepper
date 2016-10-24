@@ -1,4 +1,4 @@
-# numberpicker
+# numberstepper
 
 
 ## Gradle
@@ -11,7 +11,7 @@ repositories {
     
 ``` groovy
 dependencies {
-    compile 'com.github.czy1121:numberpicker:1.0.0'
+    compile 'com.github.czy1121:numberstepper:1.0.1'
 }
 ```
     
@@ -20,28 +20,28 @@ dependencies {
 **XML**
 
 ``` xml
-<com.github.czy1121.view.NumberPicker
-    android:id="@+id/np"
-    style="@style/NumberPicker"
-    app:npMaxValue="100"
-    app:npMinValue="1"
-    app:npStep="1"
-    app:npValue="5"
+<com.github.czy1121.view.NumberStepper
+    android:id="@+id/ns"
+    style="@style/NumberStepper"
+    app:nsMaxValue="100"
+    app:nsMinValue="1"
+    app:nsStep="1"
+    app:nsValue="5"
     />
 ```
 
 **Java**
 
 ``` java
-npValue = (NumberPicker) findViewById(R.id.np);
-npValue.setOnValueChangedListener(new NumberPicker.OnValueChangedListener() {
+nsValue = (NumberStepper) findViewById(R.id.np);
+nsValue.setOnValueChangedListener(new NumberStepper.OnValueChangedListener() {
     @Override
-    public void onValueChanged(NumberPicker view, int value) {
+    public void onValueChanged(NumberStepper view, int value) {
         txtValue.setText("" + value);
     }
 });
 // init(step, min, max, value)
-npValue.init(5, -10, 100, 8); 
+nsValue.init(5, -10, 100, 8); 
 ```
 
 ## Preview
