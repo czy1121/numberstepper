@@ -3,6 +3,8 @@
 
 ## Gradle
 
+[![](https://jitpack.io/v/czy1121/numberstepper.svg)](https://jitpack.io/#czy1121/numberstepper)
+
 ``` groovy
 repositories { 
     maven { url "https://jitpack.io" }
