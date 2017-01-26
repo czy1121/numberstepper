@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.2"
 
     defaultConfig {
-        applicationId "com.github.czy1121.numberstepper.example"
+        applicationId "ezy.demo.numberstepper.example"
         minSdkVersion 16
         targetSdkVersion 24
         versionCode 1

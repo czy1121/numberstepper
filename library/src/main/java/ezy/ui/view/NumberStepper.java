@@ -1,4 +1,4 @@
-package com.github.czy1121.view;
+package ezy.ui.view;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import com.github.czy1121.numberstepper.R;
+import ezy.library.numberstepper.R;
 
 
 public class NumberStepper extends LinearLayout {

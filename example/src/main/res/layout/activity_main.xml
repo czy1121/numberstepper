@@ -24,7 +24,7 @@
             android:layout_gravity="center"
             android:text="value: "
             android:textSize="16sp"/>
-        <com.github.czy1121.view.NumberStepper
+        <ezy.ui.view.NumberStepper
             android:id="@+id/ns"
             style="@style/NumberStepper"
             android:layout_weight="1"
@@ -54,7 +54,7 @@
             android:layout_gravity="center"
             android:text="step: "
             android:textSize="16sp"/>
-        <com.github.czy1121.view.NumberStepper
+        <ezy.ui.view.NumberStepper
             android:id="@+id/np_step"
             style="@style/NumberStepper"
             app:nsMaxValue="10"

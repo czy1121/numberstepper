@@ -1,19 +1,16 @@
-# numberstepper
+# NumberStepper [![](https://jitpack.io/v/czy1121/numberstepper.svg)](https://jitpack.io/#czy1121/numberstepper)
 
+
+![screenshot](screenshot.png)
 
 ## Gradle
-
-[![](https://jitpack.io/v/czy1121/numberstepper.svg)](https://jitpack.io/#czy1121/numberstepper)
 
 ``` groovy
 repositories { 
     maven { url "https://jitpack.io" }
-}
-```  
-    
-``` groovy
+} 
 dependencies {
-    compile 'com.github.czy1121:numberstepper:1.1.0'
+    compile 'com.github.czy1121:numberstepper:1.2.0'
 }
 ```
     
@@ -22,7 +19,7 @@ dependencies {
 **XML**
 
 ``` xml
-<com.github.czy1121.view.NumberStepper
+<ezy.ui.view.NumberStepper
     android:id="@+id/ns"
     style="@style/NumberStepper"
     app:nsMaxValue="100"
@@ -45,7 +42,4 @@ nsValue.setOnValueChangedListener(new NumberStepper.OnValueChangedListener() {
 // init(step, min, max, value)
 nsValue.init(5, -10, 100, 8); 
 ```
-
-## Preview
-
-![screenshot](screenshot.png)
+ 

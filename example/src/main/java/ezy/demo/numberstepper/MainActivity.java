@@ -1,11 +1,11 @@
-package com.github.czy1121.numberstepper.example;
+package ezy.demo.numberstepper;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-import com.github.czy1121.view.NumberStepper;
+import ezy.ui.view.NumberStepper;
 
 
 public class MainActivity extends AppCompatActivity {
